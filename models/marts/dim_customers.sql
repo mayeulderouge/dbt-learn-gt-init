@@ -1,5 +1,3 @@
-{{ config(materialized='view')}}
-
 with customers as (
 --select * from analytics.jaffle_shop.stg_jaffle_shop__customers
 select * from {{ ref('stg_jaffle_shop__customers')}}
