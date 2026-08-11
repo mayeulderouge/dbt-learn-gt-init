@@ -1,0 +1,21 @@
+models:
+  - name: dim_customers
+    columns:
+      - name: customer_id
+        description: A unique identifer for each cutomers.
+        data_tests:
+          - unique
+          - not_null
+      - name: first_name
+        description: The first name of the customer.
+        data_tests:
+          - not_null
+      - name: last_name
+        description: The last name of the customer.
+        data_tests:
+          - not_null
+      - name: fisrt_order_date
+      - name: most_recent_order_date
+      - name: number_of_orders
+      
+        
