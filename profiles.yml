@@ -1,0 +1,13 @@
+PROD:
+  target: prod
+  outputs:
+    prod:
+      type: snowflake
+      account: GPOHNYP-HO61284
+      user: MAYEULDEROUGE
+      role: ACCOUNTADMIN
+      database: RAW
+      warehouse: COMPUTE_WH
+      schema: dbt_mderouge
+      authenticator: keypair
+      private_key_path: /tmp/rsa_key.p8
